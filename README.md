@@ -1,8 +1,15 @@
-# Getting Started with Create React App
+# Task tracker
+
+Simple web app build using React and plain CSS. Uses hardcoded set of initial tasks instead of fetching them from backend server - might be changed in the future.
+
+
+## Screenshots
+![img.png](images/img.png)
+![img_1.png](images/img_1.png)
+## Available Scripts
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
 
 In the project directory, you can run:
 
