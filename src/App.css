@@ -1,38 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Akshar:wght@700&family=Fira+Sans:ital,wght@1,500&family=Montserrat:wght@700&family=Quicksand:wght@600&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+}
+
+body {
+    background-color: whitesmoke;
+}
+
 .App {
-  text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Header {
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+    font-size: x-large;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.Header h1 {
+    padding: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.Tasks {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    min-width: 400px;
 }
 
-.App-link {
-  color: #61dafb;
+.Task {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.NewTaskForm {
+    width: 50%;
+    min-width: 400px;
+}
+
+.NewTaskForm .textArea {
+    background-color: whitesmoke;
+    border: none;
+    font-size: 16px;
+    width: 100%;
+    padding: 5px;
+}
+
+.NewTaskForm .textArea:focus {
+    outline: none;
+}
+
+.NewTaskForm .submitNewTask {
+    visibility: hidden;
+}
+
+.Button {
+    background: transparent;
+    border: none;
+}
+
+.Button:hover {
+    cursor: pointer;
 }
